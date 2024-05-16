@@ -23,6 +23,7 @@ jobs:
         pip3 install -U sphinx
         pip3 install sphinx_rtd_theme
         pip3 install m2r myst-parser
+        pip3 install sphinx_copybutton
 
     - name: Build documentation
       run: cd main && make html
