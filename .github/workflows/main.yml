@@ -33,6 +33,8 @@ jobs:
       uses: pavi2410/html-preview-action@v2
       with:
         html_file: '_build/html'
+    - name: Get url
+      run: ${{ steps.html_preview.outputs.url }}
     # - name: Deploy to preview server
     #   uses: peaceiris/actions-gh-pages@v3
     #   with:
