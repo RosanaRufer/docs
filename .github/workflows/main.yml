@@ -28,6 +28,11 @@ jobs:
     - name: Build documentation
       run: cd main && make html
 
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: '_build/html'
     # - name: Deploy to preview server
     #   uses: peaceiris/actions-gh-pages@v3
     #   with:
